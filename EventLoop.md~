@@ -1,0 +1,31 @@
+# EVENT LOOP.
+---
+
+Su trabajo es revisar el stack, si el stack está vacío toma la primera instrucción de queue y la introduce en el stack, sonde se ejecuta inmediatamente.
+
+**JavaScript**
+Es un lenguaje de programación de un sólo hilo, lo que significa que sólo tiene un stack que es lo mismo a que sólo puede hacer una cosa a a la vez.
+
+El lenguaje javascript cuenta con un componente llamado *call stack*, que se encarga de llevar el control de en qué parte de ejecución está el programa. Asi, si hay saltos a funciones, sabe exactamente a dónde regresar para seguir ejecutantdo.
+
+Javascript corre en un navegador, que ofrece un entorno de runtime (como V8), web APIs, callback queue, event loop; todo esto para que javascript pueda "ejecutar más de una instrucción a la vez."
+
+Cuando no se maneja un event loop el navegador tiene que esperar a hacer todas las peticiones o instrucciones ára poder realizar otras tareas, como renderizar imágenes o actualizar la vista de un botón. En otras palabras, el event loop sirve para lidiar con el *blocking*(que no es más que código que su ejecución es lenta).
+
+**Asíncronía**
+Permite al navegador ejecutar las instrucciones en tiempos determinados, por ejemplo al utilizar la función *setTimeout*.
+
+the browser can't do anythong until the request complete. <- No deal
+fluid UIs so we can't block the stack <-- Solution: asynchronus callbacks = no blacking functions. Basically means we run some code, give it a callback, and run later.
+
+we run the setTimeout, but that queue's the colsole log for fututre
+
+asynchronous callbacks with stacks. setTimeout define in how much time later tge instructions run.
+
+Concurrency & the Event Loop: One thing at a time, except not reall
+The reason we can do thing concurrently is that the broeser is more than just the runtimey
+
+The job of evenloop is to look at the stack and loop at the task queue. if the stack is empty it takes the fisrts thing on the queue and pushes in on to the stack which efectivily run it.
+The eventloop has to wait till the stack is clear before it can push the callback on to the stack. Set Timeout 0, se realiza la instrucción hasta que el stack esté vacio(final del program)
+
+
