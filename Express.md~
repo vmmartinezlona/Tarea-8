@@ -1,0 +1,27 @@
+# Express
+---
+
+Express es una infraestructura de aplicaciones web Node.js mínima y flexible que proporciona un conjunto sólido de características para las aplicaciones web y móviles. 
+
+El propósito de utilizar Express con Node.js es no tener que repetir el mismo código tantas veces. Si utilizamos, por ejemplo, el módulo HTTP sólo con Node.js deberemos hacer muchas conifguraciones, cosa que Express.js nos otorga fácilmente.
+
+**Ventajas**
+
++ Interfaces Middleware.
++ Hadling para manejo de sesiones, servicio de archivos estáticos, etc.
++ Sub rutas.
++ Funciones de enrutamiento.
++ Enrutamiento con caso sensitivos a mayúsculas y minúsculas.
++ Métodos para consultar la información del request.
++ Métodos para la construcción del response.
+
+Todo tipo de funciones de enrutamiento, incluyendo enrutamiento, manejadores diferentes para puesto, GET, POST, etc ..., manejo de comodín, las variables automáticamente retirada del URL, etc ...
+    routers sub
+    archivo estático que sirve
+    Un marco que muchos motores de plantilla populares plugin para
+    Ver el almacenamiento en caché
+    Enrutamiento por mayúsculas y minúsculas o no entre mayúsculas y minúsculas
+    Un marco de middleware, que toneladas de módulos de terceros NGP se conectan a
+    apoyo etag
+    Todo tipo de propiedades y métodos útiles para consultar información sobre la solicitud
+    Todo tipo de métodos para la construcción de la respuesta
